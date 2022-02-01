@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>A simple HTML document</title>
 </head>
+
 <body>
-    <p>Hello World!<p>
-	
-	<p>This is a paragraph.</p>
-	<!-- Paragraph with nested element -->
-	<p>
-		This is <b>another</b> paragraph.
-	</p>
-	
-	<br /><br />
-	
-	<button type="button" onclick="alert('Do not just click any button!')">Click Me!</button>
-	
-	<br /><br />
-	
-	<button type="button" onclick="alert('HAH, a wild code appeared! 1989')">Click Me!</button>
-	
+    <p>Hello World!
+        <p>
+
+            <p>This is a paragraph.</p>
+            <!-- Paragraph with nested element -->
+            <p>
+                This is <b>another</b> paragraph.
+            </p>
+
+            <br /><br />
+
+            <button type="button" onclick="alert('Do not just click any button! This is fine though.')">Click Me!</button>
+
+            <br /><br />
+
+            <input type="button" value="Click me!" onclick="showImage();" />
+            <img id="loadingImage" src="yourimage.gif" style="visibility:hidden" />
+
+            <br /><br />
+
+            <button type="button" onclick="alert('HAH, a wild code appeared! 1989')">Click Me!</button>
+
 </body>
+
 </html>
