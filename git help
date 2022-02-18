@@ -1,0 +1,4 @@
+If you're unable to use the 'git push' command because your permissions are denied, do:
+- In VS Code, click the user icon bottom left and sign out
+- Run the command "git remote set-url origin https://github.com/DiSaeITI/iti-dojo.git"
+- Run "git push" again, you will get to see a pop-up to sign in again, you can do this via the browser.
