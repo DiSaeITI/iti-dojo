@@ -36,3 +36,17 @@ $dojoMembers = @{
 }
 $dojoMembers
 $dojoMembers.GetEnumerator() | Sort-Object Value # GetEnumerator() method that lets you deal with the individual hashtable entries
+
+
+# In DevOps we can't provide values for an array via @() but we can make use of string arrays [string[]].
+# For example, there's a variable in DevOps to store email target addresses $emailTo
+# In the ps1 script you've defined in the param( [string[]]$emailTo)
+# To be able to send an email to each value in that string array you must first split it into an array, like a comma-separated list.
+param(
+    [string[]]$emailTo = "demo@itineris.net,test@itineris.net"
+)
+
+# The below indicates that the values provided in the DevOps variable must be comma separated.
+[array]$toEmailAddresses = $emailTo.Split(',') 
+$toEmailAddresses
+
