@@ -7,12 +7,14 @@ $env:PSModulePath -split ';'
 # Manually import the module file by specifying its location
 Import-Module "$PSScriptRoot\PowerShell-ITI-DOJO.psm1"
 
+# Auto load module after storing it in local folder
+Import-Module PowerShell-ITI-DOJO
+
 Get-PSVersion
 
 Get-PowerShellProcess
 
-Write-Log -Message "{0} : No time like today to learn PowerShell scripting." -f (Get-Date)
-Write-Log ("{0} : No time like today to learn PowerShell scripting." -f (Get-Date)) 
+Write-Log -message ("{0} : No time like today to learn PowerShell scripting." -f (Get-Date)) 
 
-Get-ComputerName 
+Get-ComputerName
 
