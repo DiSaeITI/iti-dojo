@@ -11,7 +11,7 @@ function Get-PowerShellProcess
 
 function Write-Log($message)
 {
-    Write-Output ($message) 
+    Write-Output ($message)
 }
 
 # An advanced function

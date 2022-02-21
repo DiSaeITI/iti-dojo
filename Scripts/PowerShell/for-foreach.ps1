@@ -23,3 +23,5 @@ $Message = "Output: "
     Start-Sleep 2
 } -ThrottleLimit 4
 
+# % alias
+Get-Alias %
