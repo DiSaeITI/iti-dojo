@@ -10,3 +10,4 @@ Get-Help Get-Service -Full # Check which parameters accept pipeline input
 
 Get-Alias -Definition Where-Object
 Get-Alias -Definition Sort-Object
+Get-Alias -Definition Format-Table

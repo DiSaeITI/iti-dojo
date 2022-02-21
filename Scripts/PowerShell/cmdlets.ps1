@@ -6,6 +6,8 @@ Get-Command -Verb "Get"
 Get-Command -Noun "Service"
 Get-Command -Verb "Get" -Noun "Service"
 
+Get-Verb | Sort-Object -Property Verb
+
 # Get detailed information about the Get-ChildItem cmdlet, including the alias and examples
 Get-Help Get-ChildItem -Detailed
 
