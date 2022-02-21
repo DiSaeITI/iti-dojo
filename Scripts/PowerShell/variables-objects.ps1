@@ -12,9 +12,9 @@ $sum
 $hello = "Hi magenta family"
 $hello
 
-# Spaces can be in variable names, but I do not recommend this
+# Spaces can be in variable names by using parenthesis, but I do not recommend this
 ${This is a variable} = "No way.."
-Write-Host ${This is a variable}
+Write-Host ${This is a variable} -ForegroundColor Red
 
 # Personally I like the below more, feels easier to type/use
 $variableTestResult = "Yes way.."
